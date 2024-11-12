@@ -1,0 +1,82 @@
+-- User Table
+CREATE TABLE User (
+    UserID INT PRIMARY KEY,                        -- Unique identifier for each user
+    Username VARCHAR(100) NOT NULL,                -- Username for the user
+    Email VARCHAR(255) NOT NULL,                   -- User's email address
+    SubscriptionType ENUM('Basic', 'Standard', 'Premium') NOT NULL,  -- User's subscription type
+    LanguagePreference VARCHAR(50),                -- Preferred language
+    Region VARCHAR(100),                           -- User's region (e.g., country or city)
+    SubscriptionStartDate DATE,                    -- Date when the subscription started
+    IsActive BOOLEAN NOT NULL                      -- Whether the user is currently active or not
+);
+
+-- Content Table
+CREATE TABLE Content (
+    ContentID INT PRIMARY KEY,                     -- Unique identifier for each content (movie, TV show, etc.)
+    Title VARCHAR(255) NOT NULL,                    -- Title of the content
+    Type ENUM('Movie', 'TV Show', 'Documentary') NOT NULL,  -- Type of content
+    Genre VARCHAR(255),                             -- Genre(s) of the content (could be a comma-separated list for simplicity)
+    ReleaseYear INT,                               -- Year the content was released
+    Rating DECIMAL(3,2),                            -- Rating between 0 and 10
+    Duration INT,                                  -- Duration in minutes for movies, number of episodes for TV shows
+    Language VARCHAR(50),                          -- Language of the content
+    Description TEXT                                -- Short description of the content
+);
+
+-- Watch History Table
+CREATE TABLE WatchHistory (
+    HistoryID INT PRIMARY KEY,                     -- Unique identifier for each watch history entry
+    UserID INT,                                    -- User ID (Foreign Key)
+    ContentID INT,                                 -- Content ID (Foreign Key)
+    StartDate DATETIME,                            -- When the user started watching
+    EndDate DATETIME,                              -- When the user finished or paused watching
+    Progress ENUM('In Progress', 'Completed', 'Paused') NOT NULL, -- Viewing status
+    FOREIGN KEY (UserID) REFERENCES User(UserID),  -- Foreign Key reference to User
+    FOREIGN KEY (ContentID) REFERENCES Content(ContentID)  -- Foreign Key reference to Content
+);
+
+-- Reviews Table
+CREATE TABLE Reviews (
+    ReviewID INT PRIMARY KEY,                      -- Unique identifier for each review
+    UserID INT,                                    -- User ID (Foreign Key)
+    ContentID INT,                                 -- Content ID (Foreign Key)
+    Rating INT CHECK (Rating BETWEEN 1 AND 5),      -- Rating given by the user (1-5)
+    ReviewText TEXT,                               -- The text of the review
+    ReviewDate DATE,                               -- Date when the review was written
+    FOREIGN KEY (UserID) REFERENCES User(UserID),  -- Foreign Key reference to User
+    FOREIGN KEY (ContentID) REFERENCES Content(ContentID)  -- Foreign Key reference to Content
+);
+
+-- Recommendations Table
+CREATE TABLE Recommendations (
+    RecommendationID INT PRIMARY KEY,              -- Unique identifier for each recommendation
+    UserID INT,                                    -- User ID (Foreign Key)
+    ContentID INT,                                 -- Content ID (Foreign Key)
+    Reason TEXT,                                   -- Reason for the recommendation
+    FOREIGN KEY (UserID) REFERENCES User(UserID),  -- Foreign Key reference to User
+    FOREIGN KEY (ContentID) REFERENCES Content(ContentID)  -- Foreign Key reference to Content
+);
+
+-- Subscription Plans Table
+CREATE TABLE SubscriptionPlans (
+    PlanID INT PRIMARY KEY,                        -- Unique identifier for each subscription plan
+    PlanName ENUM('Basic', 'Standard', 'Premium') NOT NULL,  -- Name of the subscription plan
+    Price DECIMAL(10, 2),                           -- Price of the subscription plan
+    DevicesAllowed INT,                             -- Number of devices allowed for streaming
+    StreamingQuality ENUM('SD', 'HD', '4K')        -- Quality of streaming (SD, HD, 4K)
+);
+
+-- Content Genres Table (for Many-to-Many relationship between Content and Genres)
+CREATE TABLE Genres (
+    GenreID INT PRIMARY KEY,                       -- Unique identifier for each genre
+    GenreName VARCHAR(100) NOT NULL                -- Name of the genre (e.g., Action, Comedy)
+);
+
+-- Mapping Table between Content and Genres for Many-to-Many relationship
+CREATE TABLE ContentGenres (
+    ContentID INT,                                 -- Content ID (Foreign Key)
+    GenreID INT,                                   -- Genre ID (Foreign Key)
+    PRIMARY KEY (ContentID, GenreID),               -- Composite Primary Key
+    FOREIGN KEY (ContentID) REFERENCES Content(ContentID),  -- Foreign Key reference to Content
+    FOREIGN KEY (GenreID) REFERENCES Genres(GenreID)  -- Foreign Key reference to Genres
+);
