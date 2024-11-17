@@ -10,17 +10,13 @@ Objective: This is my capstone project for the "Introduction to Programming" cou
 Key Insights: Gained hands-on experience in problem-solving, algorithm design, and code optimization. It is designed to show my proficiency in programming fundamentals and understanding of algorithms.
 Tools & Technologies:
 Python
-Data Structures and Algorithms
-Folder Path: Introduction_to_Programming_Capstone
+
 
 **2. Airbnb Booking Analysis**
 Objective: Analyze the NYC Airbnb dataset to uncover patterns in pricing, booking behavior, and the factors affecting demand for different types of Airbnb listings.
 Key Insights: This project identifies important factors that influence pricing, booking patterns, and neighborhood effects on demand. It also examines seasonality, price factors, and host performance.
 Tools & Technologies:
 Python (Pandas, NumPy, Matplotlib, Seaborn)
-SQL for data extraction and analysis
-Tableau for interactive data visualization
-Folder Path: Airbnb_Booking_Analysis
 
 **3. Netflix Product Dissection**
 This project provides an in-depth analysis of Netflix's business model, technical architecture, and user-centric features. It highlights how Netflix solves real-world problems like content discovery, global accessibility, and binge-watching, all while maintaining scalability and an optimized user experience.
