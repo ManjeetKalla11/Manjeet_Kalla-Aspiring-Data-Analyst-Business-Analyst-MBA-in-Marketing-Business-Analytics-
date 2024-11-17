@@ -1,4 +1,6 @@
 Manjeet Kalla - Data Analysis
+
+
 Welcome to my GitHub repository! This repository contains a collection of my data analysis and programming projects that showcase my skills in data manipulation, visualization, and problem-solving. The projects highlight my work in different domains, using a variety of tools and techniques.
 
 Projects
