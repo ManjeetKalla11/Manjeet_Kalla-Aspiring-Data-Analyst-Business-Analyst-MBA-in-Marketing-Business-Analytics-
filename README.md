@@ -1,47 +1,45 @@
-Data Analysis Projects by Manjeet Kalla
-Welcome to my GitHub repository! This repository showcases my data analysis projects, highlighting my expertise in tools like Python, Tableau, Power BI, and SQL. Below, you'll find details about each project, including objectives, methodologies, and key insights.
+Manjeet Kalla - Data Analysis
+Welcome to my GitHub repository! This repository contains a collection of my data analysis and programming projects that showcase my skills in data manipulation, visualization, and problem-solving. The projects highlight my work in different domains, using a variety of tools and techniques.
 
-Projects Overview
-1. Airbnb Booking Analysis
-Description:
-An in-depth analysis of the Airbnb NYC 2019 dataset to uncover patterns in pricing, booking trends, and customer behavior.
-
-Technologies Used:
-
+Table of Contents
+Projects
+Technologies Used
+Installation and Setup
+Contributing
+Contact
+Projects
+1. Introduction to Programming - Capstone Project
+Objective: This is my capstone project for the "Introduction to Programming" course. It involves applying foundational programming concepts to create a useful application or tool.
+Key Insights: Gained hands-on experience in problem-solving, algorithm design, and code optimization. It is designed to show my proficiency in programming fundamentals and understanding of algorithms.
+Tools & Technologies:
+Python
+Data Structures and Algorithms
+Folder Path: Introduction_to_Programming_Capstone
+2. Airbnb Booking Analysis
+Objective: Analyze the NYC Airbnb dataset to uncover patterns in pricing, booking behavior, and the factors affecting demand for different types of Airbnb listings.
+Key Insights: This project identifies important factors that influence pricing, booking patterns, and neighborhood effects on demand. It also examines seasonality, price factors, and host performance.
+Tools & Technologies:
 Python (Pandas, NumPy, Matplotlib, Seaborn)
-Tableau (Interactive dashboards)
-Key Insights:
-
-Manhattan listings have the highest average prices but also see the highest demand.
-Entire homes/apartments are preferred over shared or private rooms.
-Seasonal trends indicate peak demand during summer.
-Files:
-
-Airbnb_Booking_Analysis.ipynb: Python code for data analysis.
-Tableau Dashboard (Link included in the repository).
-2. Product Dissection: Netflix
-Description:
-A detailed analysis of Netflix's business model, features, and challenges, focusing on content discovery and scalability.
-
-Technologies Used:
-
-Python (Schema design, analysis)
-Relational database design principles
-Key Insights:
-
-Netflix leverages cloud infrastructure for scalability and high availability.
-Proposed a relational database schema for managing users, content, and payments.
-Highlighted strategies to improve global accessibility and content discovery.
-Files:
-
-Product_Dissection_Netflix.pdf: Detailed report on Netflix’s business model.
-Netflix_Relational_Schema.png: Database schema design diagram.
-
-
-Future Enhancements
-Airbnb Project: Incorporate predictive models for pricing and demand forecasting.
-Netflix Project: Analyze user sentiment from reviews for content recommendations.
+SQL for data extraction and analysis
+Tableau for interactive data visualization
+Folder Path: Airbnb_Booking_Analysis
+3. Product Dissection - Netflix
+Objective: Analyze and dissect the Netflix product, focusing on the content, user engagement metrics, and business strategies. This project explores user preferences, content trends, and viewing behavior.
+Key Insights: Insights from this analysis help understand how content recommendations work, the correlation between user ratings and content types, and user engagement across different genres and countries.
+Tools & Technologies:
+Python (Pandas, NumPy)
+Data Visualization with Matplotlib and Seaborn
+Exploratory Data Analysis (EDA)
+Folder Path: Product_Dissection_Netflix
+Technologies Used
+Programming Languages: Python, SQL
+Data Analysis Tools: Pandas, NumPy, Matplotlib, Seaborn
+Business Intelligence Tools: Tableau
+Other Tools: Jupyter Notebooks
+Version Control: Git, GitHub
 
 Contact
-For any queries, suggestions, or collaborations, feel free to connect:
-📧 manjeet.kalla11@gmail.com
+You can reach out to me via:
+
+Email: manjeet.kalla11@gmail.com
+LinkedIn: https://www.linkedin.com/in/manjeet-kalla-3b75381aa?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcgvjYgfhQvuznVTgiEd%2Fkw%3D%3D
