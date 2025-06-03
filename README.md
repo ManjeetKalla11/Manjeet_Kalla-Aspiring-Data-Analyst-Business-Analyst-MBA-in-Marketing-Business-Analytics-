@@ -3,30 +3,25 @@ Welcome to my GitHub repository! This repository contains a collection of my dat
 
 Projects
 1. Introduction to Programming - Capstone Project
-Objective:
-This is my capstone project for the "Introduction to Programming" course. It involves applying foundational programming concepts to create a useful application or tool.
+Objective:This is my capstone project for the "Introduction to Programming" course. It involves applying foundational programming concepts to create a useful application or tool.
 
-Key Insights:
-Gained hands-on experience in problem-solving, algorithm design, and code optimization. This project demonstrates my proficiency in programming fundamentals and understanding of algorithms.
+Key Insights:Gained hands-on experience in problem-solving, algorithm design, and code optimization. This project demonstrates my proficiency in programming fundamentals and understanding of algorithms.
 
 Tools & Technologies:
 
 Python
 
 2. Airbnb Booking Analysis
-Objective:
-Analyze the NYC Airbnb dataset to uncover patterns in pricing, booking behavior, and the factors affecting demand for different types of Airbnb listings.
+Objective:Analyze the NYC Airbnb dataset to uncover patterns in pricing, booking behavior, and the factors affecting demand for different types of Airbnb listings.
 
-Key Insights:
-This project identifies important factors that influence pricing, booking patterns, and neighborhood effects on demand. It also examines seasonality, price factors, and host performance.
+Key Insights:This project identifies important factors that influence pricing, booking patterns, and neighborhood effects on demand. It also examines seasonality, price factors, and host performance.
 
 Tools & Technologies:
 
 Python (Pandas, NumPy, Matplotlib, Seaborn)
 
 3. Netflix Product Dissection
-Objective:
-An in-depth analysis of Netflix's business model, technical architecture, and user-centric features. This project highlights how Netflix solves real-world problems like content discovery, global accessibility, and binge-watching while maintaining scalability and an optimized user experience.
+Objective:An in-depth analysis of Netflix's business model, technical architecture, and user-centric features. This project highlights how Netflix solves real-world problems like content discovery, global accessibility, and binge-watching while maintaining scalability and an optimized user experience.
 
 Key Features:
 
@@ -47,8 +42,7 @@ Scalable cloud infrastructure and CDNs to ensure smooth, global streaming.
 Offline viewing, ad-free streaming, and multi-device support to enhance user experience.
 
 4. Global Terrorism Data Cleaning and Analysis
-Objective:
-This project focuses on cleaning and preparing a large dataset of global terrorism incidents for analysis. The dataset contains information on terrorist incidents worldwide, including locations, attack types, targets, and casualties.
+Objective:This project focuses on cleaning and preparing a large dataset of global terrorism incidents for analysis. The dataset contains information on terrorist incidents worldwide, including locations, attack types, targets, and casualties.
 
 Key Insights:
 
@@ -65,8 +59,7 @@ Tools & Technologies:
 Python (Pandas, NumPy, Matplotlib, Seaborn)
 
 5. Health Insurance Cross-Sell Prediction
-Objective:
-Developed models to predict potential cross-sell opportunities in the health insurance domain.
+Objective:Developed models to predict potential cross-sell opportunities in the health insurance domain.
 
 Key Insights:
 
